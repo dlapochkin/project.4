@@ -63,9 +63,9 @@ def matrix(branches, n, i):
     inprint = '{:<3}'.format(str(n-i))
     for v in range(1, n+1):
         if v in branches[n-i-1]:
-            inprint += '{:<3}'.format('1')
+            inprint += '{:<3}'.format('*')
         else:
-            inprint += '{:<3}'.format('0')
+            inprint += '{:<3}'.format('')
     print(inprint)
     return matrix(branches, n, i-1)
 
